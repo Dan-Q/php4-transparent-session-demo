@@ -14,7 +14,7 @@ if( $my_name_is ) $name = $my_name_is;
   <? include('counter.php') ?>
   <form>
     <p>
-      <b>Hi, <?= $name ?>!</b>
+      <b>Hi, <?= htmlspecialchars($name) ?>!</b>
       👈
       <i>I'll remember the name you give me when you come back!</i>
     </p>
